@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0B4504292CA5072000E94B13 /* TextParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4504282CA5072000E94B13 /* TextParsing.swift */; };
+		0BC655EC2CA76D7C003722F0 /* HTMLEntities in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC655EB2CA76D7C003722F0 /* HTMLEntities */; };
+		0BC655EF2CA77C43003722F0 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC655EE2CA77C43003722F0 /* SwiftSoup */; };
+		0BC655F22CA7AB68003722F0 /* FaviconFinder in Frameworks */ = {isa = PBXBuildFile; productRef = 0BC655F12CA7AB68003722F0 /* FaviconFinder */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0B7778A62C96045A00838257 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4504282CA5072000E94B13 /* TextParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextParsing.swift; sourceTree = "<group>"; };
 		0B7778912C96045800838257 /* Hackery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7778A52C96045A00838257 /* HackeryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackeryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7778AF2C96045A00838257 /* HackeryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackeryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC655F22CA7AB68003722F0 /* FaviconFinder in Frameworks */,
+				0BC655EC2CA76D7C003722F0 /* HTMLEntities in Frameworks */,
+				0BC655EF2CA77C43003722F0 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,7 @@
 		0B7778882C96045800838257 = {
 			isa = PBXGroup;
 			children = (
+				0B4504282CA5072000E94B13 /* TextParsing.swift */,
 				0B7778932C96045800838257 /* Hackery */,
 				0B7778A82C96045A00838257 /* HackeryTests */,
 				0B7778B22C96045A00838257 /* HackeryUITests */,
@@ -125,6 +137,9 @@
 			);
 			name = Hackery;
 			packageProductDependencies = (
+				0BC655EB2CA76D7C003722F0 /* HTMLEntities */,
+				0BC655EE2CA77C43003722F0 /* SwiftSoup */,
+				0BC655F12CA7AB68003722F0 /* FaviconFinder */,
 			);
 			productName = Hackery;
 			productReference = 0B7778912C96045800838257 /* Hackery.app */;
@@ -208,6 +223,11 @@
 			);
 			mainGroup = 0B7778882C96045800838257;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0BC655EA2CA76D7C003722F0 /* XCRemoteSwiftPackageReference "swift-html-entities" */,
+				0BC655ED2CA77C43003722F0 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				0BC655F02CA7AB68003722F0 /* XCRemoteSwiftPackageReference "FaviconFinder" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0B7778922C96045800838257 /* Products */;
 			projectDirPath = "";
@@ -249,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4504292CA5072000E94B13 /* TextParsing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +596,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0BC655EA2CA76D7C003722F0 /* XCRemoteSwiftPackageReference "swift-html-entities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/swift-html-entities.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		0BC655ED2CA77C43003722F0 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.5;
+			};
+		};
+		0BC655F02CA7AB68003722F0 /* XCRemoteSwiftPackageReference "FaviconFinder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/will-lumley/FaviconFinder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0BC655EB2CA76D7C003722F0 /* HTMLEntities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC655EA2CA76D7C003722F0 /* XCRemoteSwiftPackageReference "swift-html-entities" */;
+			productName = HTMLEntities;
+		};
+		0BC655EE2CA77C43003722F0 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC655ED2CA77C43003722F0 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		0BC655F12CA7AB68003722F0 /* FaviconFinder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BC655F02CA7AB68003722F0 /* XCRemoteSwiftPackageReference "FaviconFinder" */;
+			productName = FaviconFinder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0B7778892C96045800838257 /* Project object */;
 }

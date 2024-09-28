@@ -25,7 +25,8 @@ struct HackeryApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // ContentView()
+            Homepage()
         }
         .modelContainer(sharedModelContainer)
     }
