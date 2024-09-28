@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class HackeryUITestsLaunchTests: XCTestCase {
+final class FF6600UITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

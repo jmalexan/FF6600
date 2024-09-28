@@ -32,38 +32,38 @@
 
 /* Begin PBXFileReference section */
 		0B4504282CA5072000E94B13 /* TextParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextParsing.swift; sourceTree = "<group>"; };
-		0B7778912C96045800838257 /* Hackery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackery.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B7778A52C96045A00838257 /* HackeryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackeryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B7778AF2C96045A00838257 /* HackeryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackeryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B7778912C96045800838257 /* FF6600.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FF6600.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B7778A52C96045A00838257 /* FF6600Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF6600Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B7778AF2C96045A00838257 /* FF6600UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF6600UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0B7778B72C96045A00838257 /* Exceptions for "Hackery" folder in "Hackery" target */ = {
+		0B7778B72C96045A00838257 /* Exceptions for "FF6600" folder in "FF6600" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 0B7778902C96045800838257 /* Hackery */;
+			target = 0B7778902C96045800838257 /* FF6600 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0B7778932C96045800838257 /* Hackery */ = {
+		0B7778932C96045800838257 /* FF6600 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				0B7778B72C96045A00838257 /* Exceptions for "Hackery" folder in "Hackery" target */,
+				0B7778B72C96045A00838257 /* Exceptions for "FF6600" folder in "FF6600" target */,
 			);
-			path = Hackery;
+			path = FF6600;
 			sourceTree = "<group>";
 		};
-		0B7778A82C96045A00838257 /* HackeryTests */ = {
+		0B7778A82C96045A00838257 /* FF6600Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HackeryTests;
+			path = FF6600Tests;
 			sourceTree = "<group>";
 		};
-		0B7778B22C96045A00838257 /* HackeryUITests */ = {
+		0B7778B22C96045A00838257 /* FF6600UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = HackeryUITests;
+			path = FF6600UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -100,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				0B4504282CA5072000E94B13 /* TextParsing.swift */,
-				0B7778932C96045800838257 /* Hackery */,
-				0B7778A82C96045A00838257 /* HackeryTests */,
-				0B7778B22C96045A00838257 /* HackeryUITests */,
+				0B7778932C96045800838257 /* FF6600 */,
+				0B7778A82C96045A00838257 /* FF6600Tests */,
+				0B7778B22C96045A00838257 /* FF6600UITests */,
 				0B7778922C96045800838257 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,9 +110,9 @@
 		0B7778922C96045800838257 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0B7778912C96045800838257 /* Hackery.app */,
-				0B7778A52C96045A00838257 /* HackeryTests.xctest */,
-				0B7778AF2C96045A00838257 /* HackeryUITests.xctest */,
+				0B7778912C96045800838257 /* FF6600.app */,
+				0B7778A52C96045A00838257 /* FF6600Tests.xctest */,
+				0B7778AF2C96045A00838257 /* FF6600UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,9 +120,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0B7778902C96045800838257 /* Hackery */ = {
+		0B7778902C96045800838257 /* FF6600 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B7778B82C96045A00838257 /* Build configuration list for PBXNativeTarget "Hackery" */;
+			buildConfigurationList = 0B7778B82C96045A00838257 /* Build configuration list for PBXNativeTarget "FF6600" */;
 			buildPhases = (
 				0B77788D2C96045800838257 /* Sources */,
 				0B77788E2C96045800838257 /* Frameworks */,
@@ -133,21 +133,21 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				0B7778932C96045800838257 /* Hackery */,
+				0B7778932C96045800838257 /* FF6600 */,
 			);
-			name = Hackery;
+			name = FF6600;
 			packageProductDependencies = (
 				0BC655EB2CA76D7C003722F0 /* HTMLEntities */,
 				0BC655EE2CA77C43003722F0 /* SwiftSoup */,
 				0BC655F12CA7AB68003722F0 /* FaviconFinder */,
 			);
 			productName = Hackery;
-			productReference = 0B7778912C96045800838257 /* Hackery.app */;
+			productReference = 0B7778912C96045800838257 /* FF6600.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0B7778A42C96045A00838257 /* HackeryTests */ = {
+		0B7778A42C96045A00838257 /* FF6600Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B7778BD2C96045A00838257 /* Build configuration list for PBXNativeTarget "HackeryTests" */;
+			buildConfigurationList = 0B7778BD2C96045A00838257 /* Build configuration list for PBXNativeTarget "FF6600Tests" */;
 			buildPhases = (
 				0B7778A12C96045A00838257 /* Sources */,
 				0B7778A22C96045A00838257 /* Frameworks */,
@@ -159,18 +159,18 @@
 				0B7778A72C96045A00838257 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				0B7778A82C96045A00838257 /* HackeryTests */,
+				0B7778A82C96045A00838257 /* FF6600Tests */,
 			);
-			name = HackeryTests;
+			name = FF6600Tests;
 			packageProductDependencies = (
 			);
 			productName = HackeryTests;
-			productReference = 0B7778A52C96045A00838257 /* HackeryTests.xctest */;
+			productReference = 0B7778A52C96045A00838257 /* FF6600Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0B7778AE2C96045A00838257 /* HackeryUITests */ = {
+		0B7778AE2C96045A00838257 /* FF6600UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B7778C02C96045A00838257 /* Build configuration list for PBXNativeTarget "HackeryUITests" */;
+			buildConfigurationList = 0B7778C02C96045A00838257 /* Build configuration list for PBXNativeTarget "FF6600UITests" */;
 			buildPhases = (
 				0B7778AB2C96045A00838257 /* Sources */,
 				0B7778AC2C96045A00838257 /* Frameworks */,
@@ -182,13 +182,13 @@
 				0B7778B12C96045A00838257 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				0B7778B22C96045A00838257 /* HackeryUITests */,
+				0B7778B22C96045A00838257 /* FF6600UITests */,
 			);
-			name = HackeryUITests;
+			name = FF6600UITests;
 			packageProductDependencies = (
 			);
 			productName = HackeryUITests;
-			productReference = 0B7778AF2C96045A00838257 /* HackeryUITests.xctest */;
+			productReference = 0B7778AF2C96045A00838257 /* FF6600UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,7 +214,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0B77788C2C96045800838257 /* Build configuration list for PBXProject "Hackery" */;
+			buildConfigurationList = 0B77788C2C96045800838257 /* Build configuration list for PBXProject "FF6600" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -233,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0B7778902C96045800838257 /* Hackery */,
-				0B7778A42C96045A00838257 /* HackeryTests */,
-				0B7778AE2C96045A00838257 /* HackeryUITests */,
+				0B7778902C96045800838257 /* FF6600 */,
+				0B7778A42C96045A00838257 /* FF6600Tests */,
+				0B7778AE2C96045A00838257 /* FF6600UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,12 +292,12 @@
 /* Begin PBXTargetDependency section */
 		0B7778A72C96045A00838257 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0B7778902C96045800838257 /* Hackery */;
+			target = 0B7778902C96045800838257 /* FF6600 */;
 			targetProxy = 0B7778A62C96045A00838257 /* PBXContainerItemProxy */;
 		};
 		0B7778B12C96045A00838257 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0B7778902C96045800838257 /* Hackery */;
+			target = 0B7778902C96045800838257 /* FF6600 */;
 			targetProxy = 0B7778B02C96045A00838257 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -308,14 +308,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hackery/Hackery.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FF6600/FF6600.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Hackery/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FF6600/Preview Content\"";
 				DEVELOPMENT_TEAM = KMY78Z7HFB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Hackery/Info.plist;
+				INFOPLIST_FILE = FF6600/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jmalexan.Hackery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmalexan.FF6600;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,14 +339,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Hackery/Hackery.entitlements;
+				CODE_SIGN_ENTITLEMENTS = FF6600/FF6600.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Hackery/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FF6600/Preview Content\"";
 				DEVELOPMENT_TEAM = KMY78Z7HFB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Hackery/Info.plist;
+				INFOPLIST_FILE = FF6600/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -357,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jmalexan.Hackery;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmalexan.FF6600;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -499,7 +499,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hackery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FF6600.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FF6600";
 			};
 			name = Debug;
 		};
@@ -518,7 +518,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hackery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hackery";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FF6600.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FF6600";
 			};
 			name = Release;
 		};
@@ -559,7 +559,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B77788C2C96045800838257 /* Build configuration list for PBXProject "Hackery" */ = {
+		0B77788C2C96045800838257 /* Build configuration list for PBXProject "FF6600" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B7778BB2C96045A00838257 /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B7778B82C96045A00838257 /* Build configuration list for PBXNativeTarget "Hackery" */ = {
+		0B7778B82C96045A00838257 /* Build configuration list for PBXNativeTarget "FF6600" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B7778B92C96045A00838257 /* Debug */,
@@ -577,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B7778BD2C96045A00838257 /* Build configuration list for PBXNativeTarget "HackeryTests" */ = {
+		0B7778BD2C96045A00838257 /* Build configuration list for PBXNativeTarget "FF6600Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B7778BE2C96045A00838257 /* Debug */,
@@ -586,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0B7778C02C96045A00838257 /* Build configuration list for PBXNativeTarget "HackeryUITests" */ = {
+		0B7778C02C96045A00838257 /* Build configuration list for PBXNativeTarget "FF6600UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0B7778C12C96045A00838257 /* Debug */,

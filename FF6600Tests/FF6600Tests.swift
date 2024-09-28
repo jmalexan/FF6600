@@ -6,7 +6,7 @@
 //
 
 import Testing
-@testable import Hackery
+@testable import FF6600
 
 @Test func contentParsing() {
     let result = parseContent("this is a test<p>this text <em>will be</em> <i>emphasized</i><p>isn&#39;t this fun?<p>here is a link to <a href=\"https://www.google.com\" rel=\"nofollow\">Google</a>")
