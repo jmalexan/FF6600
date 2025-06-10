@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Homepage: View {
     @State var posts: [Post]?;
-    
+        
     var client = HNClient()
     
     var body: some View {

@@ -10,7 +10,7 @@ import SwiftSoup
 
 struct HNClient: Source {
     func getHomepage(tag: HomepageViews) async throws -> [Post] {
-        guard var storiesUrl = URL(string: "https://hacker-news.firebaseio.com/v0/topstories.json") else {
+        guard let storiesUrl = URL(string: "https://hacker-news.firebaseio.com/v0/topstories.json") else {
             throw HNError.invalidUrl
         }
                                     

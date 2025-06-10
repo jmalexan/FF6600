@@ -7,10 +7,11 @@
 
 import SwiftUI
 import FaviconFinder
+import BetterSafariView
 
 struct PostBlock: View {
     let post: Post
-    
+        
     @State var favicon: UIImage?
     
     var body: some View {
@@ -24,8 +25,11 @@ struct PostBlock: View {
                 }
                 if let url = post.url, let host = url.host {
                     HStack {
-                        Image(systemName: "link")
-                        Text(host).font(.subheadline)
+                        Button {
+//                            urlAction(url)
+                        } label: {
+                            Text(host).font(.subheadline)
+                        }
                         Spacer()
                     }
                     .task {
@@ -43,10 +47,6 @@ struct PostBlock: View {
                 }
                 HStack {
                     Text("Posted \(post.createdAt.timeAgoDisplay())")
-                    if let updatedAt = post.updatedAt {
-                        Text("•")
-                        Text("Updated \(updatedAt.timeAgoDisplay())")
-                    }
                     Spacer()
                 }
                 .font(.footnote)
@@ -59,17 +59,21 @@ struct PostBlock: View {
                     
                 }
             }
-            if let favicon = favicon {
+            if let favicon = favicon, let url = post.url {
                 VStack {
-                    Image(uiImage: favicon)
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(10)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.primary, lineWidth: 1)
-                        )
+                    Button {
+//                        urlAction(url)
+                    } label: {
+                        Image(uiImage: favicon)
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .aspectRatio(contentMode: .fit)
+                            .cornerRadius(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.primary, lineWidth: 1)
+                            )
+                    }
                     Spacer()
                 }
             }
@@ -78,6 +82,9 @@ struct PostBlock: View {
 }
 
 #Preview {
-    PostBlock(post: Post(id: 41538471, title: "Why use metaphors in conflicts? Because understanding is remembering in disguise (2009)", author: "yamrzou", url: URL(string: "https://google.com"), storyText: nil, type: PostType.story, score: 67, createdAt: Date(timeIntervalSince1970: 1727234567), updatedAt: Date() - 1000, numComments: 6))
-        .padding()
+    VStack {
+        PostBlock(post: Post(id: 41538471, title: "Why use metaphors in conflicts? Because understanding is remembering in disguise (2009)", author: "yamrzou", url: URL(string: "https://google.com"), storyText: nil, type: PostType.story, score: 67, createdAt: Date(timeIntervalSince1970: 1727234567), updatedAt: Date() - 1000, numComments: 6))
+            .padding()
+        Spacer()
+    }
 }
